@@ -13,7 +13,7 @@ public class MarkdownParseTest {
 
     @Test
     public void markdownTest() throws Exception {
-        Path fileName = Path.of("test-file.md");
+        Path fileName = Path.of("/Users/Mayflower/Documents/GitHub/markdown-parser/test-file.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
         ArrayList<String> expected = new ArrayList<String>();

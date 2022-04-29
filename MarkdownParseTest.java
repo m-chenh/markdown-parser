@@ -21,7 +21,7 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-
+    /*
     @Test
     public void markdownTest2() throws Exception {
         Path fileName = Path.of("test-file2.md");
@@ -78,4 +78,5 @@ public class MarkdownParseTest {
         expected.add("a link on the first line");
         assertEquals(expected, links);
     }
+    */
 }

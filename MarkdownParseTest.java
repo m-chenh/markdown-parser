@@ -10,7 +10,7 @@ public class MarkdownParseTest {
     public void addition() {
         assertEquals(2, 1 + 1);
     }
-
+    /*
     @Test
     public void markdownTest() throws Exception {
         Path fileName = Path.of("test-file1.md");
@@ -21,7 +21,8 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-    /*
+    */
+    
     @Test
     public void markdownTest2() throws Exception {
         Path fileName = Path.of("test-file2.md");
@@ -32,7 +33,7 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-
+    /*
     @Test
     public void markdownTest3() throws Exception {
         Path fileName = Path.of("test-file3.md");

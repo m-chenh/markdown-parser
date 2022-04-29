@@ -10,10 +10,10 @@ public class MarkdownParseTest {
     public void addition() {
         assertEquals(2, 1 + 1);
     }
-    /*
+    
     @Test
     public void markdownTest() throws Exception {
-        Path fileName = Path.of("test-file1.md");
+        Path fileName = Path.of("test-file.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
         ArrayList<String> expected = new ArrayList<String>();
@@ -21,7 +21,7 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-    */
+    
     
     @Test
     public void markdownTest2() throws Exception {

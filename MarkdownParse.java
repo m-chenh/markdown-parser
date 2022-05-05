@@ -31,7 +31,9 @@ public class MarkdownParse {
                 if(openBracket-1 >= 0)
                 {
                     if(markdown.charAt(openBracket-1) != '!')
+                    {
                         toReturn.add(markdown.substring(openParen + 1, closeParen));
+                    }
                 }
                 else if (openBracket == 0)
                     toReturn.add(markdown.substring(openParen + 1, closeParen));

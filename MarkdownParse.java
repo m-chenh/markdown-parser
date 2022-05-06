@@ -31,7 +31,9 @@ public class MarkdownParse {
                 if(openBracket-1 >= 0)
                 {
                     if(markdown.charAt(openBracket-1) != '!')
+                    {
                         toReturn.add(markdown.substring(openParen + 1, closeParen));
+                    }
                 }
                 else if (openBracket == 0)
                     toReturn.add(markdown.substring(openParen + 1, closeParen));
@@ -46,7 +48,7 @@ public class MarkdownParse {
         Path fileName = Path.of(args[0]);
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
-        System.out.println("hi");
-	    System.out.println(links);
+        // System.out.println("hi");
+	System.out.println(links);
     }
 }

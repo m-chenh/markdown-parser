@@ -100,7 +100,7 @@ public class MarkdownParseTest {
    ArrayList<String> expected = new ArrayList<String>();
    expected.add("a.com");
    expected.add("a.com(())");
-   expected.add("examp");
+   expected.add("example.com");
    assertEquals(expected, links);
  } 
  @Test

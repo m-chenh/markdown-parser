@@ -34,7 +34,8 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-    /*
+    
+    //added test
     @Test
     public void markdownTest3() throws Exception {
         Path fileName = Path.of("test-file3.md");
@@ -44,6 +45,9 @@ public class MarkdownParseTest {
         assertEquals(expected, links);
     }
 
+
+
+    
     @Test
     public void markdownTest4() throws Exception {
         Path fileName = Path.of("test-file4.md");
@@ -53,6 +57,7 @@ public class MarkdownParseTest {
         assertEquals(expected, links);
     }
 
+    /* 
     @Test
     public void markdownTest5() throws Exception {
         Path fileName = Path.of("test-file5.md");
@@ -61,7 +66,8 @@ public class MarkdownParseTest {
         ArrayList<String> expected = new ArrayList<String>();
         assertEquals(expected, links);
     }
-
+    */
+    
     @Test
     public void markdownTest6() throws Exception {
         Path fileName = Path.of("test-file6.md");
@@ -71,6 +77,7 @@ public class MarkdownParseTest {
         assertEquals(expected, links);
     }
 
+    /*
     @Test
     public void markdownTest7() throws Exception {
         Path fileName = Path.of("test-file7.md");
@@ -80,5 +87,5 @@ public class MarkdownParseTest {
         expected.add("a link on the first line");
         assertEquals(expected, links);
     }
-    */
+   */ 
 }

@@ -6,12 +6,8 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class MarkdownParseTest {
-    @Test
-    public void addition() {
-        // example
-        assertEquals(2, 1 + 1);
-    }
-    
+   
+    /*
     @Test
     public void markdownTest() throws Exception {
         Path fileName = Path.of("test-file.md");
@@ -34,8 +30,7 @@ public class MarkdownParseTest {
         expected.add("some-page.html");
         assertEquals(expected, links);
     }
-    
-    //added test
+   
     @Test
     public void markdownTest3() throws Exception {
         Path fileName = Path.of("test-file3.md");
@@ -44,10 +39,7 @@ public class MarkdownParseTest {
         ArrayList<String> expected = new ArrayList<String>();
         assertEquals(expected, links);
     }
-
-
-
-    
+ 
     @Test
     public void markdownTest4() throws Exception {
         Path fileName = Path.of("test-file4.md");
@@ -56,8 +48,8 @@ public class MarkdownParseTest {
         ArrayList<String> expected = new ArrayList<String>();
         assertEquals(expected, links);
     }
-
-    /* 
+ 
+    // infinite loop
     @Test
     public void markdownTest5() throws Exception {
         Path fileName = Path.of("test-file5.md");
@@ -66,7 +58,6 @@ public class MarkdownParseTest {
         ArrayList<String> expected = new ArrayList<String>();
         assertEquals(expected, links);
     }
-    */
     
     @Test
     public void markdownTest6() throws Exception {
@@ -77,7 +68,8 @@ public class MarkdownParseTest {
         assertEquals(expected, links);
     }
 
-    /*
+    
+    // infinite loop
     @Test
     public void markdownTest7() throws Exception {
         Path fileName = Path.of("test-file7.md");
@@ -87,5 +79,17 @@ public class MarkdownParseTest {
         expected.add("a link on the first line");
         assertEquals(expected, links);
     }
-   */ 
+   */
+
+   @Test
+   public void markdownTestSnippet1() throws Exception {
+  	Path fileName = Path.of("snippet1.md");
+	String content = Files.readString(fileName);
+  	ArrayList<String> links = MarkdownParse.getLinks(content);
+	ArrayList<String> expected = new ArrayList<String>();
+	expected.add("'google.com");
+	expected.add("google.com");
+	expected.add("ucsd.edu");
+	assertEquals(expected, links);
+  } 
 }
